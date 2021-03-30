@@ -34,12 +34,7 @@
     width: 500px;
     margin: 0 auto 0;
 }
-.input-line {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
-}
-.add-item-row {
+.add-item__row {
     display: flex;
 }
 .task-list {
@@ -88,6 +83,9 @@
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
 }
 .text-input:focus {
     color: #333;
@@ -101,7 +99,7 @@
 .add-item__input {
     width: 318px;
 }
-.add-item-row > .button:hover {
+.add-item__row > .button:hover {
     color: #0FC57C;
 }
 
@@ -126,6 +124,9 @@
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
 }
 .task-list-item > .text-input {
     width: 226px;
