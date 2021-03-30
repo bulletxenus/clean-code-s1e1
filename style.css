@@ -4,6 +4,11 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
+
+.main-name {
+    position: absolute;
+    opacity: 0;
+}
 .eisenhower-matrix {
     width: 500px;
     margin: 0 auto;
