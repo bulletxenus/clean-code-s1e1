@@ -34,7 +34,6 @@ var createNewTaskElement=function(taskString){
 
 
     listItem.classList.add('section__list-item');
-    console.log(listItem);
 
     label.innerText=taskString;
     label.className='item-name';
@@ -166,7 +165,6 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector(".button_edit");
     var deleteButton=taskListItem.querySelector(".button_delete");
-    console.log(editButton)
 
     //Bind editTask to edit button.
     editButton.onclick=editTask;
