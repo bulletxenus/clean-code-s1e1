@@ -32,7 +32,7 @@
 .main {
     display: block;
     width: 500px;
-    margin: 0 auto 0;
+    margin: 15px auto 0;
 }
 .add-item__row {
     display: flex;
