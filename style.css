@@ -37,12 +37,12 @@
 .add-item__row {
     display: flex;
 }
-.task-list {
+.section__list {
     margin: 0;
     padding: 0;
 }
-.task-list-item,
-.section-name {
+.section__list-item,
+.section__name {
     list-style: none;
 }
 .input,
@@ -62,7 +62,7 @@
     color: #3a3A3a;
 }
 /* Heading */
-.section-name,
+.section__name,
 .add-item__name {
     color: #333;
     font-weight: 700;
@@ -72,7 +72,7 @@
     margin: 0;
     text-transform: uppercase;
 }
-.text-input {
+.item__input-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -87,7 +87,7 @@
     display: inline-block;
     flex-grow: 1;
 }
-.text-input:focus {
+.item__input-text:focus {
     color: #333;
 }
 
@@ -104,7 +104,7 @@
 }
 
 /* Task list */
-.task-list-item {
+.section__list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -112,34 +112,33 @@
     justify-content: space-between;
     align-items: center;
 }
-.task-list-item > * {
+.section__list-item > * {
     vertical-align: middle;
 }
 
-.task-list-item > .item__checkbox {
+.section__list-item > .item__checkbox {
     margin: 0 10px;
 }
-.task-list-item > .item-name {
+.section__list-item > .item-name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px;
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
-.task-list-item > .text-input {
+.section__list-item > .item__input-text {
     width: 226px;
 }
-.task-list-item > .delete-button:hover {
+.section__list-item > .button_delete:hover {
     color: #CF2323;
 }
-.delete-button .button__image {
+.button_delete .button__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.delete-button .button__image:hover {
+.button_delete .button__image:hover {
     transform: rotateZ(0);
 }
 
@@ -150,15 +149,15 @@
 }
 
 /* Edit Task */
-.task-list .task-list-item .text-input {
+.section__list .section__list-item .item__input-text {
     display: none;
 }
 
-.task-list .edit-mode .text-input {
+.section__list .edit-mode .item__input-text {
     display: inline-block;
     width: 224px;
 }
 
-.task-list .edit-mode .item-name {
+.section__list .edit-mode .item-name {
     display: none;
 }
